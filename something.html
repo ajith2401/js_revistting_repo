@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Is it Raining?</title>
+</head>
+<body>
+  <h1>Is it Raining?</h1>
+  <script>
+    // Get the user's location.
+    navigator.geolocation.getCurrentPosition(function(position) {
+      // Get the latitude and longitude of the user's location.
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+
+      // Use the OpenWeatherMap API to get the current weather data for the user's location.
+      var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=b1dd02f46af858cb3601a6c097434742";
+      var request = new XMLHttpRequest();
+      request.open("GET", url);
+      request.send();
+
+      // Handle the response from the OpenWeatherMap API.
+      request.onload = function() {
+        if (request.status === 200) {
+          // Parse the JSON response.
+          var data = JSON.parse(request.responseText);
+
+          // Check the precipitation probability in the weather data.
+          var precipitationProbability = data.main.rain;
+
+          // Show the user a message that says it is raining or not raining, depending on the precipitation probability.
+          if (precipitationProbability > 0.5) {
+            document.getElementById("message").innerHTML = "It is raining.";
+          } else {
+            document.getElementById("message").innerHTML = "It is not raining.";
+          }
+        }
+      };
+    });
+  </script>
+  <p id="message"></p>
+</body>
+</html>

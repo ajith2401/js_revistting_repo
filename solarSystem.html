@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .container {
+            width: 40em;
+            height: 40em;
+            position: relative;
+        }
+
+        .sun {
+            width: 10em;
+            height: 10em;
+            background-color: rgb(255, 217, 1);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate-sun 10s linear infinite;
+        }
+
+        .earth-orbit {
+            width: 20em;
+            height: 20em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: top left;
+            animation: rotate-earth-orbit 10s linear infinite;
+        }
+
+        .earth {
+            width: 5em;
+            height: 5em;
+            background-color: aqua;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: rotate-earth 10s linear infinite;
+        }
+
+        .moon {
+            width: 2em;
+            height: 2em;
+            background-color: silver;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: rotate-moon 5s linear infinite;
+        }
+
+        @keyframes rotate-sun {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-earth-orbit {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-earth {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-moon {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="earth-orbit">
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

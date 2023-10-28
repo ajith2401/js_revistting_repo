@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>resume</title>
+		<style>
+			body{
+			    /* height:100vh;
+			    width: 80vw; */
+			    /* margin: 10px; */
+
+			    /* border: 1px solid rgb(0, 0, 0); */
+
+			}
+            div{
+                margin: 0px;
+                padding: 0px;
+            }
+            p{
+                margin: 0px;
+                padding: 0px;
+            }
+            ul{
+                margin: 0 10px;
+                padding: 0 10px;
+            }
+           h3{
+                margin: 15px 0 0 0;
+            }
+            h6{
+                margin: 0 10px 5px 0;
+                padding: 0 0 0 20px;
+
+            }
+            h4{
+                margin: 10px 5px; 
+            }
+           
+            .box-blue{
+                width: 10px;
+                height: 10px;
+                background-color: white; 
+                border: 1px solid  #89A9E9;
+                border-radius: 2px;
+               
+            }
+            .box_and_content{
+                display: grid; /* Use grid */
+                grid-template-columns: auto 1fr; /* First column auto for the blue box, second column takes the remaining space */
+                align-items: first baseline; /* Vertically align items in the center */
+                gap: 10px; 
+                
+            }
+			.container{
+			    display: flex;
+			    flex-direction: row;
+
+			}
+			.side-bar{
+			    padding: 10px;
+			    /* width: 299px;
+			    height: 100vh; */
+			    width: 35%;
+			    background-color: #89A9E9;
+			}
+			.main-bar{
+                display: flex;
+                flex-direction: column;
+			    padding: 10px;
+			    width: 65%;
+			}
+            .line_main{
+                width: 10px; /* Adjust the width to set the thickness of the line */
+                height: 100%; /* Make the line as tall as its container */
+                background-color: #000;
+            }
+			.Skills_list{
+			    list-style: none;
+			    display: grid;
+			    grid-template-columns: repeat(4,1fr);
+			}
+			.skill{
+			    border: 1px solid #89A9E9;
+			    text-align: center;
+			    border-radius: 3px;
+			    margin: 2px;
+			    width: 120px;
+			    background-color: #89A9E9;
+			}
+            
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="side-bar">
+				<h2>AJITHKUMAR R</h2>
+				<h5>SOFTWARE ENGINEER</h5>
+				<div>
+					<h3>CONTACT</h3>
+					<ul>
+						<li><a href="">ajith24ram@gmail.com</a></li>
+						<li>+91 9944154823</li>
+						<li><a>Ajithkumar Rangappan</a></li>
+						<li><a>ajith2401</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>EDUCATION</h3>
+					<h6>Bachelor of Engineering</h6>
+					<p>2015 - 2019</p>
+					<p>Government College of Technology,</p>
+					<p>Coimbatore.</p>
+				</div>
+				<div>
+					<h3>PROJECTS</h3>
+					<ul>
+						<li>
+							<a>E-Commerce website </a>
+						</li>
+						<li>
+							<a>Black Jack Game</a>
+						</li>
+						<li>
+							<a>Notes taking app</a>
+						</li>
+						<li>
+							<a>Calculator</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>INTERESTS</h3>
+					<ul>
+						<li>Reading diverse literature for personal enrichment.</li>
+						<li>Crafting engaging short stories and thought-provoking articles.</li>
+						<li>Strategizing and playing Chess to stimulate critical thinking.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>LANGUAGES</h3>
+					<ul>
+						<li>Tamil</li>
+						<li>English</li>
+					</ul>
+				</div>
+				<div>
+					<h3>AUTHOR</h3>
+					<p>Published four poetry books under the themes of feminism, social justice and love.</p>
+				</div>
+			</div>
+			<div class="main-bar">
+                <div class="line_main"></div>
+				<div>
+					<h3>ABOUT</h3>
+                    <div class="box_and_content">
+                        <div class="box-blue"></div>
+                        <p>
+                            Experienced Backend Developer and GovTechThon award holder with a passion for creating impactful solutions. Seeking a full-stack developer role in a dynamic work culture to collaborate on diverse projects that fuel
+                            both professional growth and innovative teamwork.
+                        </p>
+                       
+                    </div>
+					
+				</div>
+				<div>
+					<h3>SKILLS</h3>
+					<ul class="Skills_list">
+						<li class="skill">HTML</li>
+						<li class="skill">CSS</li>
+						<li class="skill">JAVASCRIPT</li>
+						<li class="skill">REACT JS</li>
+						<li class="skill">NODE JS</li>
+						<li class="skill">NEXT JS</li>
+						<li class="skill">SQL</li>
+						<li class="skill">PYTHON</li>
+						<li class="skill">REDUX JS</li>
+						<li class="skill">DIALOGFLOW</li>
+						<li class="skill">BOOTSTRAP</li>
+						<li class="skill">MATERIAL UI</li>
+					</ul>
+				</div>
+				<div>
+					<h3>EXPERIENCE</h3>
+					<div class="exp-content">
+                        <div class="box_and_content">
+                            <div class="box-blue"></div>
+                            <h4>SOFTWARE ENGINEER ,Canopi India Private Limited</h4>
+                        </div>
+	
+						<h6>SEP 2022 - Mar 2023</h6>
+						<ul>
+							<li>Single-handedly Engineered a comprehensive web and WhatsApp chatbot solution to automate bank-side services.</li>
+							<li>Developed multilingual capabilities (English, Hindi, and Tamil) for effective user interaction for the same bot.</li>
+							<li>Created robust APIs using Flask, enabling smooth communication between web app and Whatsapp bot.</li>
+							<li>Leveraged NLTK and Dialogflow for advanced natural language processing.</li>
+							<li><b>Tech Stack :</b>JavaScript, Python, Flask, Nltk, Dialogflow,NextJS,Redux</li>
+						</ul>
+					</div>
+					<div class="exp-content">
+                        <div class="box_and_content">
+                            <div class="box-blue"></div>
+                            <h4>BACKEND DEVELOPER , mocero HEALTH solutions</h4>
+                        </div>
+                        
+						<h6>SEP 2022 - Mar 2023</h6>
+						<ul>
+							<li>Employed Python for web scraping and data manipulation to effectively manage a database containing 19,000 users. This streamlined the process of migrating the database to a different system.</li>
+							<li>Single-handedly designed and built a web and WhatsApp chatbot automating healthcare services.</li>
+							<li>Collaborated with cross-functional teams, integrating APIs and ensuring data accuracy.</li>
+							<li>
+								Played a pivotal role in enhancing user experience through backend optimizations.
+							</li>
+							<li>Trained a fresher in developing chatbots for web and WhatsApp using Python, Flask, and JavaScript.</li>
+							<li><b>Tech Stack :</b> HTML, CSS, JavaScript, Python.</li>
+						</ul>
+					</div>
+					<div class="exp-content">
+                        <div class="box_and_content">
+                            <div class="box-blue"></div>
+                            <h4>TECH INTERN, Tirunelveli collectorate</h4>
+                    </div>
+						<h6>SEP 2022 - Mar 2023</h6>
+						<ul>
+							<li>
+								Worked in a team which built the India's first Whatsapp bot for disseminating government schemes and policies to the general public users.
+							</li>
+							<li>
+								Transformed a proof-of-concept Telegram bot into a full-fledged WhatsApp bot, reaching a wider audience.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h3>ACHIEVEMENTS</h3>
+					<div>
+                        <div class="box_and_content">
+                            <div class="box-blue"></div>
+                            <h4>SEVAI BOT</h4>
+                        </div>
+						
+						<ul>
+							<li><b>GovTechThon Winner:</b>Winner: Winner of GovTechThon,initiated by the Tirunelveli District Administration to encourage the innovations in technology where more than 520 teams participated.</li>
+							<li><b>Sevai Bot Creator:</b> Designed a Virtual Assistant Chatbot for Government Schemes, winning a 1-lakh cash prize.</li>
+							<li>Received recognition from the Honourable Tamil Nadu IT Minister for our outstanding contribution in developing and launching the government schemes and policies BOT.</li>
+							<li><b>News Articles:</b> The Hindu , The New Indian Express</li>
+							<li><b>Tech Stack : </b> JavaScript, nodeJS, JSON</li>
+						</ul>
+					</div>
+					<div>
+                        <div class="box_and_content">
+                            <div class="box-blue"></div>
+                            <h4></div>KURAL BOT</h4>
+                        </div>
+						<ul>
+							<li>
+								Successfully built a telegram and Whatsapp chatbot which gives Thirukkural and its context when user enters a random number within 1330 .
+							</li>
+							<li>
+								It will suggest books based on user selected categories like short stories, novels, etc.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
